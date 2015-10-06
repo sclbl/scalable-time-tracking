@@ -1,0 +1,17 @@
+body {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.no-button {
+  border: 0;
+  padding: 0;
+  margin: -20px 0 -20px 10px;
+}

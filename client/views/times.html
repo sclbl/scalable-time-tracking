@@ -1,0 +1,24 @@
+<template name="times">
+  {{#if times.count}}
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Time Spent</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each times}}
+          <tr>
+            <td>{{task}}</td>
+            <td>{{elapsedTime startDate endDate}}</td>
+            <td><button class="no-button" data-action="remove"><i class="fa fa-trash fa-lg"></i></button></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{else}}
+    <div class="text-center">There are no tracked times available to display...</div>
+  {{/if}}
+</template>
